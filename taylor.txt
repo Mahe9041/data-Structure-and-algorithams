@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int e(int x, int n){
+    static double p=1 , m=1;
+    int r ;
+    if(n == 0){
+        return 1;
+    }
+    r = e(x,n-1);
+    p=x*p;
+    m=m*n;
+    return (p/m)*r;
+}
+
+int enew(int x, int n){
+    static int s=1;
+    if(n==0){
+        return s;
+    }
+    s = 1+s*(static_cast<double>(x) / n);
+    return enew(x,n-1);
+}
+
+int main() {
+    int x , n ;
+    cin>>x>>n;
+    cout<<enew(x,n);
+    return 0;
+}
