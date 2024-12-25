@@ -1,0 +1,49 @@
+//sorted single
+
+int find(){
+    vector <int> arr = {1,2,3,4,6,7,8,9};
+    int sum =0;
+    for (int i =0;i<arr.size();i++){
+        sum+=arr[i];
+    }
+    int s = arr[arr.size()-1](arr[arr.size()-1]+1)/2;
+    cout<<s-sum;
+    return s-sum;
+}
+
+//multiple missing
+
+void find(){
+    vector<int> arr = {1,2,3,5,8,9};
+    int diff = arr[0]-0;
+    for(int i =0;i<arr.size();i++){
+        if(arr[i]-i != diff){
+            while(arr[i]-i != diff){
+                cout<<i+diff;
+                diff++;
+            }
+        }
+    }
+}
+
+//unsorted
+
+void find(){
+    vectro <int> arr = {7,3,8,2,6,4,5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    // Find the maximum element
+    int m = minmax_element(arr, arr + n)->second;
+    vector<int> hash (m+1,0);
+
+    for(int i =0;i<n;i++){
+        hash[arr[i]]++;
+    }
+
+    for(int i = 0;i<m+1;i++){
+        if(hash[i]==0){
+            cout<<i;
+        }
+    }
+
+}
