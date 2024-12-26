@@ -1,0 +1,41 @@
+//unsorted
+#include<bts/stdc++.h>
+using name space std;
+
+int main {
+    vector<int> arr = {8,3,5,2,9,1,4,6};
+    int target = 10;
+    vector<int> hash (10,0);
+    int c=0;
+    for(int i =0;i<arr.size();i++){
+        int diff = 10 - arr[i];
+        if(hash[diff]){
+            c++;
+        }
+        hash[arr[i]]++;
+    }
+    cout<<c;
+    return 0;
+}
+
+//sorted
+
+void sum2(){
+    vector<int> arr = {1,2,3,4,5,6,7,8,9};
+    int target = 10;
+    int i=0;
+    int j = arr.size()-1;
+    int c=0;
+    while(i<=j){
+        if(arr[i]+arr[j]){
+            c++;
+        }
+        else if(arr[i]+arr[j]>target){
+            j--;
+        }
+        else{
+            i++;
+        }
+    }
+    cout<<c;
+}
