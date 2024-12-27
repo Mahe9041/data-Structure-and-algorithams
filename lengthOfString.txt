@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using name space std;
+int main (){
+    char s[]= "welcome";
+    int c=0;
+    for(int i = 0;s[i]!='\0';i++){
+        c++;
+    }
+    cout<<c;
+    return 0;
+}
