@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using name space std;
+int main (){
+    char s [] = 'welcome!1234';
+    for(int i =0;s[i]!='\0';i++){
+        if(!(s[i]>'a' and s[i]<'z') and (s[i]>'A' and s[i]<'Z') and (s[i]>'1' and s[i]<'9')){
+            cout << "invalid";
+            return 0;
+        }
+    }
+    return 0;
+}

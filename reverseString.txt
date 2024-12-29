@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using name space std;
+int main(){
+    char s[]='main';
+    int i = 0;
+    int j = s.size[];
+    for(j=0;s[j]!='\0';j--){
+        }
+        if(s[j]=='\0')j--;
+    while(i<j){
+        char temp = s[i];
+        s[i]=s[j];
+        s[j]=temp;
+        i++;
+        j--;
+    }
+    cout<<s;
+}
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    char s[] = "main"; // Proper string initialization
+    int i = 0;
+    int j = strlen(s) - 1; // Calculate string length directly
+
+    while (i < j) { // Swap using std::swap
+        swap(s[i], s[j]);
+        i++;
+        j--;
+    }
+    cout << s; // Output the reversed string
+    return 0;
+}
