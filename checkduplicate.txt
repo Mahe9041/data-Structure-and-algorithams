@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+char s[]="maheshma";
+int hash [26] ;//initilise with 0
+for(int i=0;s[i]!='\0';i++)
+{
+h[s[i]-'a']++;
+}
+//now check the hash
+return 0;
+}
