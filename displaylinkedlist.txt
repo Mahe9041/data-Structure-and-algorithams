@@ -25,3 +25,10 @@ temp = temp->next;
 }
 return 0;
 }
+
+
+void recursive(Node *head){
+if(head)return ;
+cout<<head->data;
+return recursive(head->next);
+}
