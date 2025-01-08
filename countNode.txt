@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+  Node *test = head;
+  int c=0;
+  while(test){
+    c++;
+    test=test->next;
+  }
+  cout<<c;
+return 0;
+}
