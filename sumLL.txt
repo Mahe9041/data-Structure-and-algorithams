@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namesapce std;
+int main()
+{
+Node *temp = head;
+int sum =0;
+while(temp){
+sum+=temp->data;
+temp=temp->next;
+}
+cout<<sum;
+return 0;
+}
