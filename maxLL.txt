@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+Node * temp = head;
+int man = temp-> data;
+while(temp){
+if(temp ->data > max) max = temp->data;
+temp = temp -> next;
+}
+cout<<max;
+return 0;
+}
