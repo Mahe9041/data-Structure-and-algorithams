@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using name space std;
 int main(){
-cout<<"mentain streak";
+cout<<"mentain streak1";
 return 0;
 }
